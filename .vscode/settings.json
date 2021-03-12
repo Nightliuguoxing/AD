@@ -1,0 +1,25 @@
+{
+  "C_Cpp.autoAddFileAssociations": false,
+  "editor.fontSize": 18,
+  "terminal.integrated.fontSize": 18,
+  "editor.fontFamily": "Consolas, 'Courier New', monospace, 微软雅黑",
+  "code-runner.executorMap": {
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "python": "python -u"
+  },
+  "code-runner.ignoreSelection": true,
+  "code-runner.preserveFocus": false,
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "editor.matchBrackets": "never",
+  "bracket-pair-colorizer-2.showVerticalScopeLine": false,
+  "files.exclude": {
+    "{**/*.exe,**/*.class}": true
+  },
+  "files.defaultLanguage": "cpp",
+  "java.home": "C:\\Program Files\\Java\\jdk1.8.0_261",
+  "java.autobuild.enabled": false,
+  "python.pythonPath": "C:\\Program Files (x86)\\Python3\\python.exe"
+}
