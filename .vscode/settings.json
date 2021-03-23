@@ -19,7 +19,6 @@
     "{**/*.exe,**/*.class}": true
   },
   "files.defaultLanguage": "cpp",
-  "java.home": "C:\\Program Files\\Java\\jdk1.8.0_261",
   "java.autobuild.enabled": false,
   "python.pythonPath": "C:\\Program Files (x86)\\Python3\\python.exe"
 }
