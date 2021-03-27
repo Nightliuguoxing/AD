@@ -1,33 +1,28 @@
-import java.util.Scanner;
+public class SelectSort {
 
-public class SelectSort{
-
-    public static void SelectSort(int[] ary){
-        for(int i = 0; i < ary.length - 1; i++){
-            int min = i;
-            for(int j = i + 1; j < ary.length; j++){
-                if(ary[j] < ary[min]) min = j;
+    public static void Select_Sort(int[] nums) {
+        for (int i = 0; i < nums.length - 1; i++) {
+            int minIndex = i; // 记录最小值的下标
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[minIndex] > nums[j]) {
+                    minIndex = j; // 找出 i + 1 -> length 之间的最小值
+                }
             }
-            if (min != i){
-                int temp = ary[min];
-                ary[min] = ary[i];
-                ary[i] = temp;
+            // 交换 当前索引 与 最小值索引
+            if (i != minIndex) {
+                int temp = nums[minIndex];
+                nums[minIndex] = nums[i];
+                nums[i] = temp;
             }
         }
-
-        for(int num : ary){
+        // 遍历数组
+        for (int num : nums) {
             System.out.print(num + " ");
         }
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int length = sc.nextInt();
-        int[] ary = new int[length];
-        for(int i = 0; i < length; i++){
-            ary[i] = sc.nextInt();
-        }
-        sc.close();
-        SelectSort(ary);
+        String path = "Y:\\School\\AD\\ADA\\python\\EG.txt";
+        Select_Sort(new ReadFileUtil().ReadArrayDoc(path));
     }
 }
